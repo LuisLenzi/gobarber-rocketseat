@@ -35,6 +35,7 @@ export const Content = styled.div`
 
       img{
         height: 5rem;
+        transition: 0.4s;
       }
       img:hover {
         height: 5.5rem;
