@@ -42,7 +42,7 @@ export const Content = styled.div`
       display: flex;
       align-items: center;
       justify-content: center;
-      animation: right-to-left 2s ease-in-out alternate infinite 2s;
+      animation: right-to-left 1.5s ease-in-out alternate infinite 2s;
       transition: 0.4s;
 
       img{

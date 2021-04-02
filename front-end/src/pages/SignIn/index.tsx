@@ -1,5 +1,4 @@
 import React from 'react';
-import { FiLogIn } from 'react-icons/fi';
 import { Container, Content, Sidebar } from './styles';
 import Logo from '../../assets/svg/logo2.svg';
 import Back from '../../assets/svg/back-arrow-icon.svg';
