@@ -19,6 +19,16 @@ export const Content = styled.div`
   justify-content: center;
   flex-direction: column;
   gap: 3rem;
+  animation: left-to-right 1s ease-in-out;
+
+  @keyframes left-to-right {
+    0% {
+      transform: translateX(-25%);
+    }
+    100% {
+      transform: translateX(0)
+    }
+  }
 
   .logo {
     display: flex;
@@ -97,27 +107,39 @@ export const Content = styled.div`
         opacity: 0.8;
       }
     }
+  }
+`;
 
-    .social-media {
-      gap: .5rem;
-      right: 0;
-      margin-right: 3rem;
-      position: absolute;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      transition: 0.4s;
+export const SocialMedia = styled.div`
+  gap: .5rem;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  margin-right: 4rem;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: 0.4s;
+  animation: right-to-left 1s ease-in-out;
 
-      .media-icons {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-
-      .media-icons:hover {
-        opacity: 0.8;
-      }
+  @keyframes right-to-left {
+    0% {
+      transform: translateX(100%);
     }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  .media-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .media-icons:hover {
+    opacity: 0.8;
   }
 `;

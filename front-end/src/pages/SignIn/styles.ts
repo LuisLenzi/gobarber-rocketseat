@@ -17,6 +17,16 @@ export const Content = styled.div`
   display: flex;
   height: 100vh;
   flex-direction: column;
+  animation: left-to-right 1s ease-in-out;
+
+  @keyframes left-to-right {
+    0% {
+      transform: translateX(-25%);
+    }
+    100% {
+      transform: translateX(0)
+    }
+  }
 
   .first-section{
     height: 40%;
@@ -32,14 +42,26 @@ export const Content = styled.div`
       display: flex;
       align-items: center;
       justify-content: center;
+      animation: right-to-left 2s ease-in-out alternate infinite 2s;
+      transition: 0.4s;
 
       img{
         height: 5rem;
         transition: 0.4s;
       }
+
       img:hover {
         height: 5.5rem;
         opacity: 0.8;
+      }
+
+      @keyframes right-to-left {
+        100% {
+          transform: translateX(5%);
+        }
+        0% {
+          transform: translateX(0);
+        }
       }
     }
 
