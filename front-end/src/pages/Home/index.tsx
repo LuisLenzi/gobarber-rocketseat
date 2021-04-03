@@ -35,8 +35,8 @@ const LandingPage: React.FC = () => (
               <img width="45px" src={SignIn} alt="Sign In" />
               Sign In
             </a>
-            <a className="sign-up" href="/">
-              <img width="45px" src={SignUp} alt="" />
+            <a className="sign-up" href="/sign-up">
+              <img width="45px" src={SignUp} alt="Sign Up" />
               Sign Up
             </a>
           </div>

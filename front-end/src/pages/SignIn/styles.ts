@@ -15,13 +15,14 @@ export const Content = styled.div`
   justify-content: center;
   align-items: center;
   display: flex;
+  width: 100vw;
   height: 100vh;
   flex-direction: column;
-  animation: left-to-right 1s ease-in-out;
+  animation: left-to-right .5s ease-in-out;
 
   @keyframes left-to-right {
     0% {
-      transform: translateX(-25%);
+      transform: translateX(-15%);
     }
     100% {
       transform: translateX(0)
@@ -42,7 +43,7 @@ export const Content = styled.div`
       display: flex;
       align-items: center;
       justify-content: center;
-      animation: right-to-left 1.5s ease-in-out alternate infinite 2s;
+      animation: right-to-left 1s ease-in-out alternate infinite 1s;
       transition: 0.4s;
 
       img{
@@ -51,7 +52,7 @@ export const Content = styled.div`
       }
 
       img:hover {
-        height: 5.5rem;
+        height: 6rem;
         opacity: 0.8;
       }
 

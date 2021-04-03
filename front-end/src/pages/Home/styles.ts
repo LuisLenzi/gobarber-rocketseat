@@ -19,7 +19,7 @@ export const Content = styled.div`
   justify-content: center;
   flex-direction: column;
   gap: 3rem;
-  animation: left-to-right 1s ease-in-out;
+  animation: left-to-right 0.5s ease-in-out;
 
   @keyframes left-to-right {
     0% {
@@ -122,11 +122,11 @@ export const SocialMedia = styled.div`
   justify-content: center;
   flex-direction: column;
   transition: 0.4s;
-  animation: right-to-left 1s ease-in-out;
+  animation: right-to-left .5s ease-in-out;
 
   @keyframes right-to-left {
     0% {
-      transform: translateX(100%);
+      transform: translateX(25%);
     }
     100% {
       transform: translateX(0);
