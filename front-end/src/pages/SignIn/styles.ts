@@ -3,6 +3,7 @@ import background from '../../assets/png/sign-in-background.png';
 
 export const Container = styled.div`
   height: 100vh;
+  width: 100vw;
   background: url(${background}) no-repeat center / cover;
 `;
 
@@ -29,12 +30,28 @@ export const Content = styled.div`
     }
   }
 
+  @media(max-width:700px) {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .first-section{
     height: 40%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
+    @media(max-width:700px) {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 35%;
+    }
 
     .back {
       position: absolute;
@@ -46,9 +63,17 @@ export const Content = styled.div`
       animation: right-to-left 1s ease-in-out alternate infinite 1s;
       transition: 0.4s;
 
+      @media(max-width:700px) {
+        width: 25%;
+      }
+
       img{
         height: 5rem;
         transition: 0.4s;
+
+        @media(max-width:700px) {
+          height: 3rem;
+        }
       }
 
       img:hover {
@@ -67,22 +92,38 @@ export const Content = styled.div`
     }
 
     .logo {
-      width: 115%;
+      width: 100%;
       margin-top: 2rem;
       display: flex;
       align-items: center;
       justify-content: left;
 
+      @media(max-width:700px) {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
       img{
+        padding-right: 4rem;
         display: flex;
         align-items: center;
         justify-content: left;
         height: 17.5rem;
+
+        @media(max-width:700px) {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 50%;
+        }
       }
     }
   }
 
   .second-section {
+    width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -109,6 +150,10 @@ export const Content = styled.div`
       border: 2px solid #191919;
       width: 25rem;
       height: 4.5rem;
+
+      @media(max-width:700px) {
+        width: 20rem;
+      }
 
       img {
         display: flex;
@@ -140,6 +185,10 @@ export const Content = styled.div`
       width: 25rem;
       font-weight: 600;
       transition: 0.4s;
+
+      @media(max-width:700px) {
+        width: 20rem;
+      }
 
       img {
       margin-right: 1rem;

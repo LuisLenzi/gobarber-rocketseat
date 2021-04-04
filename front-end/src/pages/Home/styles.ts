@@ -4,12 +4,20 @@ import background from '../../assets/png/home-background.png';
 export const Container = styled.div`
   height: 100vh;
   background: url(${background}) no-repeat center / cover;
+
+  @media(max-width:700px) {
+    max-width: 100vw;
+  }
 `;
 
 export const Sidebar = styled.div`
   height: 100vh;
   width: 50%;
   background: rgba(19, 19, 19, 0.65);
+
+  @media(max-width:700px) {
+    width: 100%;
+  }
 `;
 
 export const Content = styled.div`
@@ -143,5 +151,9 @@ export const SocialMedia = styled.div`
   .media-icons:hover {
     opacity: 0.8;
     width: 3rem;
+  }
+
+  @media(max-width:700px) {
+    display: none;
   }
 `;
