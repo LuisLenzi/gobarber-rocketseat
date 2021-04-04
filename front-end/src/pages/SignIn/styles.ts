@@ -31,7 +31,7 @@ export const Content = styled.div`
   }
 
   @media(max-width:700px) {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -39,11 +39,11 @@ export const Content = styled.div`
   }
 
   .first-section{
+    width: 100vw;
     height: 40%;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
 
     @media(max-width:700px) {
       height: 100%;
@@ -64,6 +64,7 @@ export const Content = styled.div`
       transition: 0.4s;
 
       @media(max-width:700px) {
+        margin-top: 2rem;
         width: 25%;
       }
 
@@ -72,7 +73,7 @@ export const Content = styled.div`
         transition: 0.4s;
 
         @media(max-width:700px) {
-          height: 3rem;
+          height: 2rem;
         }
       }
 
@@ -92,13 +93,14 @@ export const Content = styled.div`
     }
 
     .logo {
-      width: 100%;
+      width: 50%;
       margin-top: 2rem;
       display: flex;
       align-items: center;
-      justify-content: left;
+      justify-content: center;
 
       @media(max-width:700px) {
+        height: 25rem;
         width: 100%;
         display: flex;
         justify-content: center;
@@ -113,6 +115,8 @@ export const Content = styled.div`
         height: 17.5rem;
 
         @media(max-width:700px) {
+          padding-left: 3rem;
+          width: 100%;
           display: flex;
           justify-content: center;
           align-items: center;
