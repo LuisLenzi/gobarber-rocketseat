@@ -33,6 +33,36 @@ export const Sidebar = styled.div`
   height: 100vh;
   width: 100%;
   background: rgba(19, 19, 19, 0.65);
+
+  .back {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img{
+      right: 48%;
+      bottom: 17.25%;
+      position: absolute;
+      height: 5rem;
+      transition: 0.4s;
+      animation: right-to-left 1s ease-in-out alternate infinite 1s;
+    }
+
+    img:hover {
+      opacity: 0.8;
+      animation-play-state: paused;
+    }
+
+    @keyframes right-to-left {
+      100% {
+        transform: translateX(15%);
+      }
+      0% {
+        transform: translateX(0);
+      }
+    }
+  }
 `;
 
 export const Content = styled.div`
@@ -130,38 +160,8 @@ export const Content = styled.div`
   }
 
   button:hover {
-      width: 26rem;
-      height: 5rem;
-      opacity: 0.8;
-    }
-
-  .back {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    img{
-      right: 48%;
-      bottom: 17.25%;
-      position: absolute;
-      height: 5rem;
-      transition: 0.4s;
-      animation: right-to-left 1s ease-in-out alternate infinite 1s;
-    }
-
-    img:hover {
-      opacity: 0.8;
-      animation-play-state: paused;
-    }
-
-    @keyframes right-to-left {
-      100% {
-        transform: translateX(15%);
-      }
-      0% {
-        transform: translateX(0);
-      }
-    }
+    width: 26rem;
+    height: 5rem;
+    opacity: 0.8;
   }
 `;

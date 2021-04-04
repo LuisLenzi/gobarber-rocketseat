@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import background from '../../assets/png/sign-in-background.png';
+import background from '../../assets/png/recover-password-background.png';
 
 export const Container = styled.div`
   height: 100vh;
@@ -89,6 +89,22 @@ export const Content = styled.div`
     justify-content: center;
     flex-direction: column;
 
+    .first-text {
+      width: 100%;
+      text-align: left;
+      font-size: 1.75rem;
+      line-height: 2rem;
+    }
+
+    .second-text {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      width: 100%;
+      text-align: left;
+      font-size: 1.25rem;
+      line-height: 2rem;
+    }
+
     .form {
       gap: 1.5rem;
       display: flex;
@@ -158,14 +174,6 @@ export const Content = styled.div`
       justify-content: center;
       text-decoration: none;
       color: #FFF;
-      transition: 0.4s;
-    }
-
-    a:hover {
-      font-size: 1.25rem;
-      opacity: 0.8;
-      color: #CF6A00;
-      font-weight: 600;
     }
   }
 `;

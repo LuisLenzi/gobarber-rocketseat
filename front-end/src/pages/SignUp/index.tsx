@@ -46,12 +46,12 @@ const SignIn: React.FC = () => (
             Register
           </button>
         </form>
-        <div className="back">
-          <a href="/">
-            <img width="75px" src={Back} alt="Back to home page" />
-          </a>
-        </div>
       </Content>
+      <div className="back">
+        <a href="/">
+          <img width="75px" src={Back} alt="Back to home page" />
+        </a>
+      </div>
     </Sidebar>
   </Container>
 );

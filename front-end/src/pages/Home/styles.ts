@@ -137,9 +137,11 @@ export const SocialMedia = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 0.4s;
   }
 
   .media-icons:hover {
     opacity: 0.8;
+    width: 3rem;
   }
 `;
